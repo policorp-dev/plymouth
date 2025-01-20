@@ -86,5 +86,6 @@ install_data(
   'throbber-0028.png',
   'throbber-0029.png',
   'throbber-0030.png',
+  'watermark.png',
   install_dir: plymouth_theme_path / 'spinner',
 )
