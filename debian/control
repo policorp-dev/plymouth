@@ -1,20 +1,27 @@
 Source: plymouth
 Section: misc
 Priority: optional
-Maintainer: Edson Juliano Drosdeck <edson@policorp.com.br>
+Maintainer: Laurent Bigonville <bigon@debian.org>
+Uploaders: Sjoerd Simons <sjoerd@debian.org>
 Build-Depends: debhelper-compat (= 13),
                docbook-xsl,
                libdrm-dev,
+               libcairo2-dev,
+               libevdev-dev,
+               libfreetype-dev,
                libgtk-3-dev (>= 3.14.0),
                libpango1.0-dev,
                libpng-dev,
-               libudev-dev,
-               pkg-config,
-               systemd,
+               libudev-dev [linux-any],
+               meson,
+               pkgconf,
+               systemd-dev,
                xsltproc
 Standards-Version: 4.6.1
 Rules-Requires-Root: no
 Homepage: https://www.freedesktop.org/wiki/Software/Plymouth
+Vcs-Git: https://salsa.debian.org/debian/plymouth.git
+Vcs-Browser: https://salsa.debian.org/debian/plymouth
 
 Package: plymouth
 Architecture: linux-any
@@ -22,7 +29,7 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: init-system-helpers (>= 1.18),
          initramfs-tools | dracut,
          systemd (>= 232-8~) | elogind,
-         udev (>= 232-8~),
+         udev (>= 232-8~) [linux-any],
          ${misc:Depends},
          ${shlibs:Depends}
 Conflicts: console-common

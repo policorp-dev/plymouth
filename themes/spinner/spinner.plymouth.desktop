@@ -1,30 +1,4 @@
 [Plymouth Theme]
-Name[be]=Круцёлка
-Name[cs]=Točítko
-Name[da]=Snurre
-Name[de]=Spinner
-Name[eo]=Turnilo
-Name[es]=Spinner
-Name[eu]=Spinner
-Name[fr]=Roulette
-Name[fur]=Roulette
-Name[hr]=Puls okretanja
-Name[hu]=Forgó
-Name[id]=Spinner
-Name[it]=Spinner
-Name[nl]=Spinner
-Name[pa]=ਸਪਿੱਨਰ
-Name[pl]=Spinner
-Name[pt_BR]=Spinner
-Name[ru]=Числовое поле с кнопками
-Name[sr]=Предилица
-Name[sv]=Spinnare
-Name[uk]=Крутний індикатор
-Name[zh_CN]=Spinner
-Name[ms]=Spinner
-Name[he]=שבשבת טעינה
-Name[fa]=چرخنده
-Name[fi]=Spinneri
 Name=Spinner
 Description=A theme designed by jimmac that features a simple spinner.
 ModuleName=two-step
@@ -32,7 +6,7 @@ ModuleName=two-step
 [two-step]
 Font=Cantarell 12
 TitleFont=Cantarell Light 30
-ImageDir=/usr/share/plymouth/themes/spinner
+ImageDir=@PLYMOUTH_THEME_PATH@/spinner
 DialogHorizontalAlignment=.5
 DialogVerticalAlignment=.382
 TitleHorizontalAlignment=.5
@@ -40,23 +14,23 @@ TitleVerticalAlignment=.382
 HorizontalAlignment=.5
 VerticalAlignment=.7
 WatermarkHorizontalAlignment=.5
-WatermarkVerticalAlignment=.40
+WatermarkVerticalAlignment=.96
 Transition=none
 TransitionDuration=0.0
 BackgroundStartColor=0x000000
 BackgroundEndColor=0x000000
-ProgressBarBackgroundColor=0x000099
-ProgressBarForegroundColor=0x000099
+ProgressBarBackgroundColor=0x606060
+ProgressBarForegroundColor=0xffffff
 MessageBelowAnimation=true
 
 [boot-up]
-UseEndAnimation=true
+UseEndAnimation=false
 
 [shutdown]
-UseEndAnimation=true
+UseEndAnimation=false
 
 [reboot]
-UseEndAnimation=true
+UseEndAnimation=false
 
 [updates]
 SuppressMessages=true
@@ -77,4 +51,11 @@ SuppressMessages=true
 ProgressBarShowPercentComplete=true
 UseProgressBar=true
 Title=Upgrading Firmware...
+SubTitle=Do not turn off your computer
+
+[system-reset]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+Title=Resetting System...
 SubTitle=Do not turn off your computer
