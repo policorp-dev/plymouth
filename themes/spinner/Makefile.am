@@ -73,7 +73,8 @@ dist_theme_DATA =                                                     \
                     throbber-0027.png                                 \
                     throbber-0028.png                                 \
                     throbber-0029.png                                 \
-                    throbber-0030.png
+                    throbber-0030.png				      \
+                    watermark.png
 
 MAINTAINERCLEANFILES = Makefile.in spinner.plymouth
 CLEANFILES = spinner.plymouth
