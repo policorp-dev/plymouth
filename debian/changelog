@@ -1,8 +1,38 @@
-plymouth (22.02.122.Policorp-5) unstable; urgency=medium
+plymouth (24.Policorp-2) stable; urgency=medium
 
-  * Firs version in Policorp
+  * updated version
 
- -- Edson Juliano Drosdeck <edson@policorp.com.br>  Fri, 23 Aug 2024 13:06:23 -0300
+ -- Edson Juliano Drosdeck <edson@policorp.com.br>  Mon, 20 Jan 2025 13:21:51 +0000
+
+plymouth (24.004.60-2) unstable; urgency=medium
+
+  * Team upload
+  * Replace systemd Build-Depends with systemd-dev for systemd.pc
+    (Closes: #1060564)
+  * Replace Build-Depends on obsolete pkg-config with pkgconf
+  * ply-boot-splash: Set unbuffered input when creating a text display.
+    Patch cherry-picked from upstream Git. (Closes: #1061592)
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 17 Jul 2024 18:39:45 +0200
+
+plymouth (24.004.60-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #1059364)
+  * debian/gbp.conf: Set upstream-vcs-tag
+  * d/p/configure.ac-Avoid-embedding-the-date-in-the-version.patch: Dropped,
+    autotools are gone
+  * Add meson support
+  * debian/control: Add new build-dependencies
+  * debian/plymouth-label.install: Install split label plugins
+  * debian/plymouth.docs: Fix documentation file names
+  * debian/control: Mark udev as linux-any
+  * debian/rules: Workaround a but in meson, it cannot create a symlink if the
+    target doesn't exist
+  * debian/libplymouth5.symbols: Add newly exported symbols
+  * debian/local/plymouth.hook: Continue to use the pango label module for now
+  * debian/patches/fallback-etc-default-keyboard.patch: Refreshed
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 11 Jan 2024 21:17:19 +0100
 
 plymouth (22.02.122-4) unstable; urgency=medium
 

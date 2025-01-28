@@ -38,7 +38,7 @@ case "${THEME_NAME}" in
 		;;
 
 	*)
-		PLUGINS="text.so details.so label.so"
+		PLUGINS="text.so details.so label-pango.so"
 		;;
 esac
 
@@ -136,7 +136,8 @@ case "${THEME_NAME}" in
 				logo=/usr/share/desktop-base/debian-logos/logo-text-version-64.png
 				if [ -e $logo ]
 				then
-					cp $logo "${DESTDIR}/${IMAGE_DIR}/watermark.png"
+					#cp $logo "${DESTDIR}/${IMAGE_DIR}/watermark.png"
+					echo "watermark.png"
 				fi
 				;;
 		esac

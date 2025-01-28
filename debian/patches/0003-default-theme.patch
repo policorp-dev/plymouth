@@ -1,4 +1,4 @@
-Author: Daniel Baumann <mail@daniel-baumann.ch>
+Author: Edson Juliano Drosdeck <edson@policorp.com.br>
 Description: Ship configuration file with default theme set (Closes: #594999).
 
 --- a/src/plymouthd.conf
@@ -7,7 +7,7 @@ Description: Ship configuration file with default theme set (Closes: #594999).
  # Administrator customizations go in this file
  #[Daemon]
 -#Theme=fade-in
-+#Theme=emerald
++#Theme=spinner
 --- a/src/plymouthd.defaults
 +++ b/src/plymouthd.defaults
 @@ -1,6 +1,6 @@
@@ -15,6 +15,6 @@ Description: Ship configuration file with default theme set (Closes: #594999).
  # upgrades.
  [Daemon]
 -Theme=spinner
-+Theme=emerald
++Theme=spinner
  ShowDelay=0
  DeviceTimeout=8
