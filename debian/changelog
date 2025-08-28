@@ -1,3 +1,9 @@
+plymouth (24.Policorp-3) stable; urgency=medium
+
+  * fix update panel
+
+ -- Edson Juliano Drosdeck <edson@policorp.com.br>  Thu, 28 Aug 2025 08:33:45 -0300
+
 plymouth (24.Policorp-2) stable; urgency=medium
 
   * updated version
