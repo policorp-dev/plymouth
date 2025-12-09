@@ -18,6 +18,7 @@ Build-Depends: debhelper-compat (= 13),
                xsltproc
 Standards-Version: 4.6.1
 Rules-Requires-Root: no
+Vcs-Git: https://github.com/policorp-dev/plymouth.git
 
 Package: plymouth
 Architecture: linux-any
